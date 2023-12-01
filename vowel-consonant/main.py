@@ -5,7 +5,9 @@ def consonant_vowel(l:int):
     consonants = 'qwrtpsdfghjklzxcvbnm'
     final =''
     for i in range(0,l):
-        final+=random.choice(consonants)
-        final+=random.choice(vowels)
+        if i%2==0:
+            final+=random.choice(consonants)
+        else:
+            final+=random.choice(vowels)
     return final.capitalize()
 print(consonant_vowel(8))
