@@ -1,4 +1,4 @@
-def caesar_ciphre_encode(s: str, shift: int):
+def caesar_cipher_encode(s: str, shift: int):
     encoded_string = ""
     for i in s:
         ordinal_value = ord(i)
@@ -8,7 +8,7 @@ def caesar_ciphre_encode(s: str, shift: int):
     return encoded_string
 
 
-def caesar_ciphre_decode(s: str, shift: int):
+def caesar_cipher_decode(s: str, shift: int):
     decoded_string = ""
     for i in s:
         ordinal_value = ord(i)
@@ -18,5 +18,5 @@ def caesar_ciphre_decode(s: str, shift: int):
     return decoded_string
 
 
-print(caesar_ciphre_encode("ahoj", 29))
-print(caesar_ciphre_decode("dkrm", 29))
+print(caesar_cipher_encode("ahoj", 29))
+print(caesar_cipher_decode("dkrm", 29))
