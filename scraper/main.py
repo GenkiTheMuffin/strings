@@ -14,6 +14,3 @@ def scraper(data:str):
     return result
 
 print(scraper("mor(sa)ho"))
-
-        
-
